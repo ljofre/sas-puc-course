@@ -1,0 +1,138 @@
+data abc;
+input a b;
+cards;
+1 4
+2 6
+3 9
+;
+run;
+proc print data=abc;
+proc print data=abc;
+run;
+proc print;
+run;
+proc iml;
+use abc; read all into c;
+print c;
+quit;
+proc iml;
+use abc; read all
+quit;
+proc iml;
+use abc; read all;
+quit;
+proc iml;
+use abc; read all;
+print;
+quit;
+proc iml;
+use abc; read all;
+print a;
+quit;
+proc iml;
+use abc; read all in c;
+print c;
+quit;
+proc iml;
+use abc; read all into c;
+print c;
+quit;
+* usar abc y guardar todo en una varuable c;
+proc iml;
+use abc; read all into c;
+print c;
+run;
+* usar abc y guardar todo en una varuable c;
+proc iml;
+use abc; read all into c;
+print c;
+run;
+quit;
+* usar abc y guardar todo en una varuable c, luego pintar c;
+proc iml;
+use abc; read all into c;
+print c;
+run;
+quit;
+* usar abc y guardar todo en una varuable c, luego pintar c;
+proc iml;
+use abc; read all into c;
+print c[1,1];
+run;
+quit;
+* usar abc y guardar todo en una varuable c, luego pintar c;
+proc iml;
+use abc; read all into c;
+print c;
+run;
+quit;
+proc iml;
+use abc; read all into c;
+
+D = C##2;
+quit;
+proc iml;
+use abc; read all into c;
+
+D = C**2;
+quit;
+proc iml;
+use abc; read all into c;
+
+d = c##2;
+print d;
+quit;
+proc iml;
+use abc; read all into c;
+
+d = c##2;
+print d;
+create imldata;
+quit;
+proc iml;
+use abc; 
+read all into c;
+
+d = c##2;
+print d;
+create imldata;
+
+append from d;
+quit;
+proc iml;
+use abc; 
+read all into c;
+
+d = c##2;
+create imldata;
+append from d;
+print imldata;
+quit;
+proc iml;
+use abc; 
+read all into c;
+
+d = c##2;
+create imldata;
+append from d;
+quit;
+proc iml;
+use abc; 
+read all into c;
+
+d = c##2;
+create imldata;
+append from d;
+quit;
+
+proc print;
+proc iml;
+use abc; 
+read all into c;
+
+d = c##2;
+create imldata;
+append from d;
+quit;
+
+proc print; run;

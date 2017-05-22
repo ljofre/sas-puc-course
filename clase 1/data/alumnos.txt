@@ -1,0 +1,4 @@
+Id	Nombre	sexo
+16198755	Leonardo	Hombre
+10477862	Nancy	Mujer
+1234	Javier	Perro

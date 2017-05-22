@@ -1,0 +1,347 @@
+Region;Comuna;Total; menos de 1.500 ;1.500 a 2.499 ;2.500 a 2.999;Mayor o igual 3.000 ;Ignorado
+De Arica y Parinacota;Arica;3634;33;124;439;3021;17
+De Arica y Parinacota;Camarones;1;0;0;0;1;0
+De Arica y Parinacota;Putre;3;0;0;0;2;1
+De Arica y Parinacota;General Lagos;2;0;0;0;2;0
+De Tarapacá;Iquique;3530;34;168;512;2797;19
+De Tarapacá;Alto Hospicio;1886;12;80;226;1552;16
+De Tarapacá;Pozo Almonte;220;1;10;39;159;11
+De Tarapacá;Camiña;17;0;2;4;7;4
+De Tarapacá;Colchane;4;0;0;1;1;2
+De Tarapacá;Huara;33;0;2;2;23;6
+De Tarapacá;Pica;63;0;0;4;54;5
+De Antofagasta;Antofagasta;6128;55;320;1162;4585;6
+De Antofagasta;Mejillones;159;5;6;21;127;0
+De Antofagasta;Sierra Gorda;15;0;3;3;9;0
+De Antofagasta;Taltal;175;0;10;38;127;0
+De Antofagasta;Calama;2893;31;211;741;1903;7
+De Antofagasta;Ollagüe;0;0;0;0;0;0
+De Antofagasta;San Pedro de Atacama;73;2;5;16;47;3
+De Antofagasta;Tocopilla;436;4;27;58;347;0
+De Antofagasta;María Elena;53;0;1;10;42;0
+De Atacama;Copiapó;2871;30;157;501;2181;2
+De Atacama;Caldera;284;5;15;49;215;0
+De Atacama;Tierra Amarilla;225;2;8;41;174;0
+De Atacama;Chañaral;249;3;7;33;206;0
+De Atacama;Diego de Almagro;267;4;19;53;191;0
+De Atacama;Vallenar;881;5;46;147;681;2
+De Atacama;Alto del Carmen;76;0;1;11;63;1
+De Atacama;Freirina;100;0;3;14;83;0
+De Atacama;Huasco;163;3;4;20;136;0
+De Coquimbo;La Serena;3246;38;149;513;2537;9
+De Coquimbo;Coquimbo;3466;30;174;538;2719;5
+De Coquimbo;Andacollo;180;3;9;28;140;0
+De Coquimbo;La Higuera;68;0;2;12;54;0
+De Coquimbo;Paiguano;49;0;3;12;34;0
+De Coquimbo;Vicuña;409;6;21;58;319;5
+De Coquimbo;Illapel;452;4;23;70;355;0
+De Coquimbo;Canela;88;0;10;13;65;0
+De Coquimbo;Los Vilos;300;1;15;43;241;0
+De Coquimbo;Salamanca;392;6;19;67;299;1
+De Coquimbo;Ovalle;1713;9;86;293;1324;1
+De Coquimbo;Combarbalá;164;3;11;20;130;0
+De Coquimbo;Monte Patria;427;1;22;68;336;0
+De Coquimbo;Punitaqui;148;3;6;16;122;1
+De Coquimbo;Río Hurtado;46;0;3;9;34;0
+De Valparaíso;Valparaíso;3991;48;201;584;3147;11
+De Valparaíso;Casablanca;327;5;20;50;251;1
+De Valparaíso;Concón;506;4;22;86;393;1
+De Valparaíso;Juan Fernández;6;0;0;0;6;0
+De Valparaíso;Puchuncaví;195;3;10;30;152;0
+De Valparaíso;Quintero;388;4;15;40;329;0
+De Valparaíso;Viña del Mar;4203;40;200;660;3296;7
+De Valparaíso;Isla de Pascua;82;0;3;14;65;0
+De Valparaíso;Los Andes;998;15;50;170;763;0
+De Valparaíso;Calle Larga;186;4;5;25;152;0
+De Valparaíso;Rinconada;156;2;7;32;114;1
+De Valparaíso;San Esteban;255;1;13;42;199;0
+De Valparaíso;La Ligua;442;7;24;67;344;0
+De Valparaíso;Cabildo;260;2;10;38;210;0
+De Valparaíso;Papudo;73;2;3;9;59;0
+De Valparaíso;Petorca;124;3;5;17;99;0
+De Valparaíso;Zapallar;73;0;4;13;56;0
+De Valparaíso;Quillota;1258;5;57;208;985;3
+De Valparaíso;Calera;773;3;38;123;609;0
+De Valparaíso;Hijuelas;238;1;7;36;194;0
+De Valparaíso;La Cruz;231;3;15;41;172;0
+De Valparaíso;Nogales;292;1;8;51;232;0
+De Valparaíso;San Antonio;1307;13;66;219;1009;0
+De Valparaíso;Algarrobo;126;1;9;17;99;0
+De Valparaíso;Cartagena;221;3;13;36;169;0
+De Valparaíso;El Quisco;134;1;6;18;108;1
+De Valparaíso;El Tabo;90;0;2;13;74;1
+De Valparaíso;Santo Domingo;131;2;6;24;99;0
+De Valparaíso;San Felipe;1166;22;70;227;843;4
+De Valparaíso;Catemu;197;3;7;44;142;1
+De Valparaíso;Llaillay;367;4;20;58;284;1
+De Valparaíso;Panquehue;88;0;1;12;75;0
+De Valparaíso;Putaendo;206;2;17;40;146;1
+De Valparaíso;Santa María;270;5;14;41;210;0
+De Valparaíso;Quilpué;1870;14;109;308;1439;0
+De Valparaíso;Limache;592;3;30;75;483;1
+De Valparaíso;Olmué;189;2;9;21;156;1
+De Valparaíso;Villa Alemana;1557;15;61;263;1216;2
+Metropolitana de Santiago;Santiago;4772;51;264;792;3664;1
+Metropolitana de Santiago;Cerrillos;1184;11;51;187;935;0
+Metropolitana de Santiago;Cerro Navia;2019;16;111;292;1599;1
+Metropolitana de Santiago;Conchalí;1786;26;82;303;1369;6
+Metropolitana de Santiago;El Bosque;2498;34;121;410;1933;0
+Metropolitana de Santiago;Estación Central;1768;18;111;294;1345;0
+Metropolitana de Santiago;Huechuraba;1567;21;89;257;1196;4
+Metropolitana de Santiago;Independencia;1139;15;56;175;891;2
+Metropolitana de Santiago;La Cisterna;1121;10;55;211;845;0
+Metropolitana de Santiago;La Florida;4730;60;251;790;3626;3
+Metropolitana de Santiago;La Granja;1923;27;96;269;1531;0
+Metropolitana de Santiago;La Pintana;3274;49;184;528;2513;0
+Metropolitana de Santiago;La Reina;1006;9;46;192;758;1
+Metropolitana de Santiago;Las Condes;3702;42;254;704;2699;3
+Metropolitana de Santiago;Lo Barnechea;1300;15;74;266;945;0
+Metropolitana de Santiago;Lo Espejo;1625;16;84;282;1243;0
+Metropolitana de Santiago;Lo Prado;1428;15;78;226;1107;2
+Metropolitana de Santiago;Macul;1499;13;77;251;1158;0
+Metropolitana de Santiago;Maipú;7252;88;367;1186;5610;1
+Metropolitana de Santiago;Ñuñoa;2645;35;166;464;1980;0
+Metropolitana de Santiago;Pedro Aguirre Cerda;1439;15;68;246;1110;0
+Metropolitana de Santiago;Peñalolén;3899;44;206;665;2983;1
+Metropolitana de Santiago;Providencia;1897;22;110;350;1414;1
+Metropolitana de Santiago;Pudahuel;3664;34;190;562;2875;3
+Metropolitana de Santiago;Quilicura;3164;45;151;460;2503;5
+Metropolitana de Santiago;Quinta Normal;1501;14;71;247;1167;2
+Metropolitana de Santiago;Recoleta;2356;35;137;357;1824;3
+Metropolitana de Santiago;Renca;2381;32;118;366;1856;9
+Metropolitana de Santiago;San Joaquín;1154;13;66;200;875;0
+Metropolitana de Santiago;San Miguel;1305;17;61;218;1008;1
+Metropolitana de Santiago;San Ramón;1445;23;76;246;1100;0
+Metropolitana de Santiago;Vitacura;1286;17;68;256;942;3
+Metropolitana de Santiago;Puente Alto;8519;106;450;1442;6520;1
+Metropolitana de Santiago;Pirque;281;5;13;58;205;0
+Metropolitana de Santiago;San José de Maipo;195;2;10;32;151;0
+Metropolitana de Santiago;Colina;2054;23;108;362;1555;6
+Metropolitana de Santiago;Lampa;1361;10;66;197;1082;6
+Metropolitana de Santiago;Tiltil;220;5;8;43;164;0
+Metropolitana de Santiago;San Bernardo;4989;62;256;736;3933;2
+Metropolitana de Santiago;Buin;1268;18;58;201;991;0
+Metropolitana de Santiago;Calera de Tango;330;6;23;51;250;0
+Metropolitana de Santiago;Paine;978;15;48;134;781;0
+Metropolitana de Santiago;Melipilla;1786;24;96;327;1338;1
+Metropolitana de Santiago;Alhué;117;0;5;17;95;0
+Metropolitana de Santiago;Curacaví;386;3;16;64;303;0
+Metropolitana de Santiago;María Pinto;138;1;5;21;111;0
+Metropolitana de Santiago;San Pedro;114;0;5;21;88;0
+Metropolitana de Santiago;Talagante;979;9;46;147;776;1
+Metropolitana de Santiago;El Monte;539;9;23;89;415;3
+Metropolitana de Santiago;Isla de Maipo;494;7;14;86;387;0
+Metropolitana de Santiago;Padre Hurtado;705;8;40;113;544;0
+Metropolitana de Santiago;Peñaflor;1233;13;52;217;951;0
+Del Libertador B. O'Higgins;Rancagua;3823;42;178;648;2949;6
+Del Libertador B. O'Higgins;Codegua;159;0;7;25;127;0
+Del Libertador B. O'Higgins;Coinco;76;0;2;15;59;0
+Del Libertador B. O'Higgins;Coltauco;251;2;12;34;203;0
+Del Libertador B. O'Higgins;Doñihue;266;0;8;46;212;0
+Del Libertador B. O'Higgins;Graneros;462;3;25;89;344;1
+Del Libertador B. O'Higgins;Las Cabras;303;2;15;42;243;1
+Del Libertador B. O'Higgins;Machalí;692;9;36;126;521;0
+Del Libertador B. O'Higgins;Malloa;132;3;7;20;102;0
+Del Libertador B. O'Higgins;Mostazal;321;2;11;62;246;0
+Del Libertador B. O'Higgins;Olivar;190;2;6;29;152;1
+Del Libertador B. O'Higgins;Peumo;190;1;5;30;154;0
+Del Libertador B. O'Higgins;Pichidegua;204;0;5;34;165;0
+Del Libertador B. O'Higgins;Quinta de Tilcoco;141;3;4;16;118;0
+Del Libertador B. O'Higgins;Rengo;805;6;31;138;629;1
+Del Libertador B. O'Higgins;Requínoa;355;3;12;58;282;0
+Del Libertador B. O'Higgins;San Vicente;591;8;25;89;469;0
+Del Libertador B. O'Higgins;Pichilemu;151;0;5;23;123;0
+Del Libertador B. O'Higgins;La Estrella;22;0;2;2;18;0
+Del Libertador B. O'Higgins;Litueche;58;0;2;6;50;0
+Del Libertador B. O'Higgins;Marchihue;65;0;5;12;48;0
+Del Libertador B. O'Higgins;Navidad;46;0;0;7;39;0
+Del Libertador B. O'Higgins;Paredones;43;1;4;4;34;0
+Del Libertador B. O'Higgins;San Fernando;1097;9;49;196;839;4
+Del Libertador B. O'Higgins;Chépica;178;0;7;29;142;0
+Del Libertador B. O'Higgins;Chimbarongo;432;2;15;83;331;1
+Del Libertador B. O'Higgins;Lolol;69;0;3;16;50;0
+Del Libertador B. O'Higgins;Nancagua;234;2;6;35;191;0
+Del Libertador B. O'Higgins;Palmilla;146;2;4;23;117;0
+Del Libertador B. O'Higgins;Peralillo;105;0;4;16;84;1
+Del Libertador B. O'Higgins;Placilla;95;1;5;18;71;0
+Del Libertador B. O'Higgins;Pumanque;27;0;1;6;20;0
+Del Libertador B. O'Higgins;Santa Cruz;460;6;21;70;363;0
+Del Maule;Talca;3041;35;148;494;2359;5
+Del Maule;Constitución;706;9;32;86;578;1
+Del Maule;Curepto;78;0;2;6;69;1
+Del Maule;Empedrado;54;1;1;3;49;0
+Del Maule;Maule;625;2;22;77;524;0
+Del Maule;Pelarco;94;3;7;14;70;0
+Del Maule;Pencahue;84;1;3;14;66;0
+Del Maule;Río Claro;138;4;6;17;111;0
+Del Maule;San Clemente;582;4;27;93;457;1
+Del Maule;San Rafael;103;1;3;17;81;1
+Del Maule;Cauquenes;538;2;29;77;430;0
+Del Maule;Chanco;101;0;4;6;91;0
+Del Maule;Pelluhue;72;1;2;9;60;0
+Del Maule;Curicó;2136;19;103;362;1652;0
+Del Maule;Hualañé;77;0;4;6;67;0
+Del Maule;Licantén;57;0;2;9;46;0
+Del Maule;Molina;573;9;21;83;460;0
+Del Maule;Rauco;93;0;4;13;76;0
+Del Maule;Romeral;175;0;6;36;131;2
+Del Maule;Sagrada Familia;181;1;9;24;147;0
+Del Maule;Teno;338;4;17;56;260;1
+Del Maule;Vichuquén;40;0;1;8;31;0
+Del Maule;Linares;1376;25;62;203;1083;3
+Del Maule;Colbún;245;0;11;30;203;1
+Del Maule;Longaví;343;6;17;37;282;1
+Del Maule;Parral;563;3;24;87;449;0
+Del Maule;Retiro;208;1;8;35;163;1
+Del Maule;San Javier;614;4;25;85;499;1
+Del Maule;Villa Alegre;179;1;8;19;151;0
+Del Maule;Yerbas Buenas;226;2;7;26;190;1
+Del Biobío;Concepción;2743;23;157;468;2081;14
+Del Biobío;Coronel;1651;15;68;217;1350;1
+Del Biobío;Chiguayante;1211;8;56;209;935;3
+Del Biobío;Florida;124;3;6;23;92;0
+Del Biobío;Hualqui;363;4;17;55;287;0
+Del Biobío;Lota;780;3;41;107;629;0
+Del Biobío;Penco;751;11;28;109;602;1
+Del Biobío;San Pedro de la Paz;2106;29;93;360;1620;4
+Del Biobío;Santa Juana;198;3;8;28;159;0
+Del Biobío;Talcahuano;2084;19;80;293;1691;1
+Del Biobío;Tomé;691;5;38;78;569;1
+Del Biobío;Hualpén;1314;9;66;187;1051;1
+Del Biobío;Lebu;374;3;8;49;314;0
+Del Biobío;Arauco;512;10;27;69;405;1
+Del Biobío;Cañete;550;8;17;61;460;4
+Del Biobío;Contulmo;54;0;2;9;42;1
+Del Biobío;Curanilahue;528;2;24;80;422;0
+Del Biobío;Los Álamos;322;2;18;34;266;2
+Del Biobío;Tirúa;152;0;4;23;125;0
+Del Biobío;Los Ángeles;2949;26;157;479;2283;4
+Del Biobío;Antuco;38;0;0;5;33;0
+Del Biobío;Cabrero;369;6;13;49;301;0
+Del Biobío;Laja;305;5;10;41;249;0
+Del Biobío;Mulchén;417;3;22;64;327;1
+Del Biobío;Nacimiento;372;5;16;56;295;0
+Del Biobío;Negrete;121;0;3;18;100;0
+Del Biobío;Quilaco;35;0;1;2;32;0
+Del Biobío;Quilleco;95;0;13;10;72;0
+Del Biobío;San Rosendo;40;0;1;3;36;0
+Del Biobío;Santa Bárbara;173;2;10;29;131;1
+Del Biobío;Tucapel;148;0;10;28;110;0
+Del Biobío;Yumbel;217;2;12;37;166;0
+Del Biobío;Alto Biobío;199;4;7;31;150;7
+Del Biobío;Chillán;2543;15;118;399;2006;5
+Del Biobío;Bulnes;267;4;12;24;227;0
+Del Biobío;Cobquecura;52;0;1;11;40;0
+Del Biobío;Coelemu;197;2;9;30;156;0
+Del Biobío;Coihueco;371;4;16;60;290;1
+Del Biobío;Chillán Viejo;371;3;17;53;298;0
+Del Biobío;El Carmen;142;0;6;15;121;0
+Del Biobío;Ninhue;51;0;3;8;40;0
+Del Biobío;Ñiquén;110;0;8;20;82;0
+Del Biobío;Pemuco;104;0;5;20;79;0
+Del Biobío;Pinto;117;2;10;21;84;0
+Del Biobío;Portezuelo;47;0;1;6;38;2
+Del Biobío;Quillón;184;4;11;20;149;0
+Del Biobío;Quirihue;114;0;4;11;99;0
+Del Biobío;Ránquil;64;1;1;8;54;0
+Del Biobío;San Carlos;641;8;38;125;469;1
+Del Biobío;San Fabián;38;0;1;6;31;0
+Del Biobío;San Ignacio;159;0;4;25;130;0
+Del Biobío;San Nicolás;106;2;7;15;82;0
+Del Biobío;Treguaco;40;0;0;5;35;0
+Del Biobío;Yungay;208;0;7;27;174;0
+De La Araucanía;Temuco;4070;51;167;550;3294;8
+De La Araucanía;Carahue;338;2;12;46;278;0
+De La Araucanía;Cunco;192;1;5;30;156;0
+De La Araucanía;Curarrehue;96;0;4;10;82;0
+De La Araucanía;Freire;351;2;16;47;284;2
+De La Araucanía;Galvarino;166;2;6;14;144;0
+De La Araucanía;Gorbea;172;1;7;24;140;0
+De La Araucanía;Lautaro;547;4;19;71;452;1
+De La Araucanía;Loncoche;292;5;6;41;240;0
+De La Araucanía;Melipeuco;73;1;1;9;62;0
+De La Araucanía;Nueva Imperial;480;4;18;53;405;0
+De La Araucanía;Padre Las Casas;1098;13;40;144;898;3
+De La Araucanía;Perquenco;90;0;10;10;69;1
+De La Araucanía;Pitrufquén;315;1;14;42;258;0
+De La Araucanía;Pucón;334;5;11;40;278;0
+De La Araucanía;Saavedra;171;3;5;23;139;1
+De La Araucanía;Teodoro Schmidt;198;1;7;25;165;0
+De La Araucanía;Toltén;131;1;6;22;102;0
+De La Araucanía;Vilcún;392;5;15;45;327;0
+De La Araucanía;Villarrica;778;3;29;97;647;2
+De La Araucanía;Cholchol;165;1;8;11;145;0
+De La Araucanía;Angol;784;8;27;92;657;0
+De La Araucanía;Collipulli;378;2;11;39;324;2
+De La Araucanía;Curacautín;189;2;11;16;160;0
+De La Araucanía;Ercilla;152;2;6;20;124;0
+De La Araucanía;Lonquimay;160;1;7;15;137;0
+De La Araucanía;Los Sauces;82;0;1;8;73;0
+De La Araucanía;Lumaco;115;1;5;14;95;0
+De La Araucanía;Purén;170;0;7;22;141;0
+De La Araucanía;Renaico;129;1;3;14;111;0
+De La Araucanía;Traiguén;249;4;6;33;205;1
+De La Araucanía;Victoria;438;3;16;54;364;1
+De Los Ríos;Valdivia;2272;17;99;291;1861;4
+De Los Ríos;Corral;53;1;1;7;44;0
+De Los Ríos;Lanco;241;1;3;28;209;0
+De Los Ríos;Los Lagos;310;3;6;34;267;0
+De Los Ríos;Máfil;72;0;6;13;53;0
+De Los Ríos;Mariquina;322;3;11;42;266;0
+De Los Ríos;Paillaco;274;6;6;28;234;0
+De Los Ríos;Panguipulli;418;2;15;50;349;2
+De Los Ríos;La Unión;519;5;20;69;425;0
+De Los Ríos;Futrono;201;1;5;20;175;0
+De Los Ríos;Lago Ranco;132;2;2;13;115;0
+De Los Ríos;Río Bueno;362;2;9;41;309;1
+De Los Lagos;Puerto Montt;3695;36;167;575;2915;2
+De Los Lagos;Calbuco;465;3;23;60;378;1
+De Los Lagos;Cochamó;33;0;0;3;29;1
+De Los Lagos;Fresia;110;1;3;14;92;0
+De Los Lagos;Frutillar;259;7;13;31;208;0
+De Los Lagos;Los Muermos;179;1;15;22;141;0
+De Los Lagos;Llanquihue;226;2;15;32;177;0
+De Los Lagos;Maullín;156;4;4;23;125;0
+De Los Lagos;Puerto Varas;746;8;20;119;598;1
+De Los Lagos;Castro;776;17;39;126;593;1
+De Los Lagos;Ancud;590;5;25;77;482;1
+De Los Lagos;Chonchi;163;0;3;24;136;0
+De Los Lagos;Curaco de Vélez;34;0;1;2;31;0
+De Los Lagos;Dalcahue;192;2;11;32;147;0
+De Los Lagos;Puqueldón;34;0;1;3;30;0
+De Los Lagos;Queilén;42;0;1;6;35;0
+De Los Lagos;Quellón;407;1;20;71;315;0
+De Los Lagos;Quemchi;85;0;3;12;70;0
+De Los Lagos;Quinchao;80;0;2;19;58;1
+De Los Lagos;Osorno;2551;22;107;363;2058;1
+De Los Lagos;Puerto Octay;107;0;9;12;86;0
+De Los Lagos;Purranque;288;1;12;39;234;2
+De Los Lagos;Puyehue;152;2;6;18;126;0
+De Los Lagos;Río Negro;168;0;9;19;140;0
+De Los Lagos;San Juan de la Costa;88;1;5;14;68;0
+De Los Lagos;San Pablo;119;2;5;12;100;0
+De Los Lagos;Chaitén;24;1;1;5;16;1
+De Los Lagos;Futaleufú;31;1;1;3;26;0
+De Los Lagos;Hualaihué;93;0;4;17;72;0
+De Los Lagos;Palena;18;0;0;3;15;0
+De Aisén del Gral. C. Ibáñez del Campo;Coihaique;937;12;47;122;754;2
+De Aisén del Gral. C. Ibáñez del Campo;Lago Verde;10;0;0;0;10;0
+De Aisén del Gral. C. Ibáñez del Campo;Aisén;389;6;17;53;313;0
+De Aisén del Gral. C. Ibáñez del Campo;Cisnes;69;2;3;7;57;0
+De Aisén del Gral. C. Ibáñez del Campo;Guaitecas;17;0;0;3;14;0
+De Aisén del Gral. C. Ibáñez del Campo;Cochrane;43;0;7;8;28;0
+De Aisén del Gral. C. Ibáñez del Campo;O'Higgins;8;0;1;1;6;0
+De Aisén del Gral. C. Ibáñez del Campo;Tortel;5;0;0;0;5;0
+De Aisén del Gral. C. Ibáñez del Campo;Chile Chico;50;1;7;6;36;0
+De Aisén del Gral. C. Ibáñez del Campo;Río Ibáñez;17;0;0;3;14;0
+De Magallanes y de La Antártica Chilena;Punta Arenas;1732;26;100;269;1335;2
+De Magallanes y de La Antártica Chilena;Laguna Blanca;1;0;0;0;1;0
+De Magallanes y de La Antártica Chilena;Río Verde;0;0;0;0;0;0
+De Magallanes y de La Antártica Chilena;San Gregorio;4;0;0;0;4;0
+De Magallanes y de La Antártica Chilena;Cabo de Hornos;18;0;0;4;14;0
+De Magallanes y de La Antártica Chilena;Antártica;4;0;0;2;2;0
+De Magallanes y de La Antártica Chilena;Porvenir;83;2;5;9;66;1
+De Magallanes y de La Antártica Chilena;Primavera;8;0;0;1;7;0
+De Magallanes y de La Antártica Chilena;Timaukel;5;0;1;0;4;0
+De Magallanes y de La Antártica Chilena;Natales;262;0;18;39;204;1
+De Magallanes y de La Antártica Chilena;Torres del Paine;1;0;0;0;1;0
