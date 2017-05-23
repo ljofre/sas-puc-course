@@ -1,138 +1,55 @@
-data abc;
-input a b;
-cards;
-1 4
-2 6
-3 9
-;
+proc import out =work.notas 
+    datafile = &file   
+    delimiter=";";
 run;
-proc print data=abc;
-proc print data=abc;
+
+proc print data=work.notas;
 run;
-proc print;
+Data notas;
+infile "/folders/myfolders/clase 8/Notas.txt"
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
 run;
-proc iml;
-use abc; read all into c;
-print c;
-quit;
-proc iml;
-use abc; read all
-quit;
-proc iml;
-use abc; read all;
-quit;
-proc iml;
-use abc; read all;
-print;
-quit;
-proc iml;
-use abc; read all;
-print a;
-quit;
-proc iml;
-use abc; read all in c;
-print c;
-quit;
-proc iml;
-use abc; read all into c;
-print c;
-quit;
-* usar abc y guardar todo en una varuable c;
-proc iml;
-use abc; read all into c;
-print c;
+Data notas;
+infile "/folders/myfolders/clase 8/Notas.txt"
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
 run;
-* usar abc y guardar todo en una varuable c;
-proc iml;
-use abc; read all into c;
-print c;
+proc print notas;
 run;
-quit;
-* usar abc y guardar todo en una varuable c, luego pintar c;
-proc iml;
-use abc; read all into c;
-print c;
+Data notas;
+infile "/folders/myfolders/clase 8/Notas.txt"
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
 run;
-quit;
-* usar abc y guardar todo en una varuable c, luego pintar c;
-proc iml;
-use abc; read all into c;
-print c[1,1];
+proc print data=notas;
 run;
-quit;
-* usar abc y guardar todo en una varuable c, luego pintar c;
-proc iml;
-use abc; read all into c;
-print c;
+Data notas;
+infile &file
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
 run;
-quit;
-proc iml;
-use abc; read all into c;
+proc print data=notas;
+run;
+%let file = "/folders/myfolders/clase 8/Notas.txt"
+Data notas;
+infile &file
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
+run;
+proc print data=notas;
+run;
+proc import out =work.notas 
+    datafile = &file   
+    delimiter=";";
+run;
 
-D = C##2;
-quit;
-proc iml;
-use abc; read all into c;
-
-D = C**2;
-quit;
-proc iml;
-use abc; read all into c;
-
-d = c##2;
-print d;
-quit;
-proc iml;
-use abc; read all into c;
-
-d = c##2;
-print d;
-create imldata;
-quit;
-proc iml;
-use abc; 
-read all into c;
-
-d = c##2;
-print d;
-create imldata;
-
-append from d;
-quit;
-proc iml;
-use abc; 
-read all into c;
-
-d = c##2;
-create imldata;
-append from d;
-print imldata;
-quit;
-proc iml;
-use abc; 
-read all into c;
-
-d = c##2;
-create imldata;
-append from d;
-quit;
-proc iml;
-use abc; 
-read all into c;
-
-d = c##2;
-create imldata;
-append from d;
-quit;
-
-proc print;
-proc iml;
-use abc; 
-read all into c;
-
-d = c##2;
-create imldata;
-append from d;
-quit;
-
-proc print; run;
+proc print data=work.notas;
+run;
+Data notas;
+infile &file
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
+run;
+proc print data=notas;
+run;
