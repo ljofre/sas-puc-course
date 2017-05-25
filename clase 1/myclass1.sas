@@ -24,7 +24,7 @@ Quit;
 proc export data=work.alumnos
 	outfile='/folders/myfolders/clase 1/data/alumnos.txt'
 	dbms=tab replace;
-	putnames=yes;
+	putnames=yes;´
 run;
 
 /*leer los archivos desde un txt*/ 

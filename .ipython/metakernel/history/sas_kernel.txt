@@ -1,36 +1,3 @@
-proc import out =work.notas 
-    datafile = &file   
-    delimiter=";";
-run;
-
-proc print data=work.notas;
-run;
-Data notas;
-infile "/folders/myfolders/clase 8/Notas.txt"
-delimiter=';' firstobs=2;
-input Nombre $ P1 P2 P3 P4;
-run;
-Data notas;
-infile "/folders/myfolders/clase 8/Notas.txt"
-delimiter=';' firstobs=2;
-input Nombre $ P1 P2 P3 P4;
-run;
-proc print notas;
-run;
-Data notas;
-infile "/folders/myfolders/clase 8/Notas.txt"
-delimiter=';' firstobs=2;
-input Nombre $ P1 P2 P3 P4;
-run;
-proc print data=notas;
-run;
-Data notas;
-infile &file
-delimiter=';' firstobs=2;
-input Nombre $ P1 P2 P3 P4;
-run;
-proc print data=notas;
-run;
 %let file = "/folders/myfolders/clase 8/Notas.txt"
 Data notas;
 infile &file
@@ -46,10 +13,1146 @@ run;
 
 proc print data=work.notas;
 run;
+proc import out =work.notas 
+    datafile = &file
+    dbms= csv
+    delimiter=";";
+run;
+
+proc print data=work.notas;
+run;
+proc import out =work.notas 
+    datafile = &file
+    dbms= csv replace
+run;
+
+proc print data=work.notas;
+run;
+proc import out =work.notas 
+    datafile = &file
+    dbms= csv replace;
+run;
+
+proc print data=work.notas;
+run;
+proc import out =work.notas 
+    datafile = &file
+    dbms= csv replace
+    delimiter=";";
+run;
+
+proc print data=work.notas;
+run;
+/* esto no sirve
+proc import out =work.notas 
+    datafile = &file
+    dbms= csv replace
+    delimiter=";";
+run;
+
+proc print data=work.notas;
+run;
+
+*/
+%let file = "/folders/myfolders/clase 8/Notas.txt"
+
 Data notas;
 infile &file
 delimiter=';' firstobs=2;
 input Nombre $ P1 P2 P3 P4;
 run;
 proc print data=notas;
+run;
+%let file = "/folders/myfolders/clase 8/Notas.txt"
+Data notas;
+infile &file
+delimiter=';' firstobs=2;
+input Nombre $ P1 P2 P3 P4;
+run;
+proc print data=notas;
+run;
+Data notas;
+    infile &file
+    delimiter=';' firstobs=2;
+    input Nombre $ P1 P2 P3 P4;
+    run;
+    proc print data=notas;
+run;
+%let file = "/folders/myfolders/clase 8/Notas.txt" 
+*no correr al mismo tiempo que otros comandos;
+Data notas;
+    infile &file
+    delimiter=';' firstobs=2;
+    input Nombre $ P1 P2 P3 P4;
+    run;
+    proc print data=notas;
+run;
+*no correr al mismo tiempo que otros comandos;
+Data notas;
+    infile &file
+    delimiter=';' firstobs=2;
+    input Nombre $ P1 P2 P3 P4;
+    run;
+    proc print data=notas;
+run;
+%let file = "/folders/myfolders/clase 8/Notas.txt"
+*no correr al mismo tiempo que otros comandos;
+Data notas;
+    infile &file
+    delimiter=';' firstobs=2;
+    input Nombre $ P1 P2 P3 P4;
+    run;
+    proc print data=notas;
+run;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+read all into nom var{nombre};
+read all into notas var{p1 p2 p3 p4};
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+use notas;
+read all into nom var{nombre};
+read all into notas var{p1 p2 p3 p4};
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+use notas;
+read all into nom var{nombre};
+read all into notas var{p1 p2 p3 p4};
+
+print nom notas;
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+use notas;
+read all into nom var{nombre};
+read all into notas var{p1 p2 p3 p4};
+
+prom = notas[,:];
+
+print prom;
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+use notas;
+read all into nom var{nombre};
+read all into notas var{p1 p2 p3 p4};
+
+prom = notas[,:];
+
+print notas prom;
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+use notas;
+read all into nom var{nombre};
+read all into notas var{p1 p2 p3 p4};
+
+prom = notas[,:]; *promedio de las filas;
+
+print notas prom;
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas));
+    
+    print counter;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    print counter;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40);
+    print counter;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40);
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40);
+    idx_rep = loc(notas<40);
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40);
+    idx_rep = loc(notas<40);
+    print idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = nombre[idx_aprob];
+    
+    
+    print idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = nombre[idx_aprob,];
+    
+    
+    print idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = nombre[idx_aprob,:];
+    
+    
+    print idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = nom[idx_aprob,];
+    
+    
+    print idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    *aprob = nom[idx_aprob,];
+    
+    
+    print nom idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas[,]<40);
+    
+    *aprob = nom[idx_aprob,];
+    
+    
+    print nom idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas[,]<40);
+    
+    aprob = nom[idx_aprob,];
+    
+    
+    print nom idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into nom var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas[,]<40);
+    
+    aprob = nom[idx_aprob];
+    
+    
+    print nom idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas);
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = names[idx_aprob];
+    
+    
+    print nom idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = names[t(idx_aprob)];
+    
+    
+    print nom idx_rep;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    
+    
+    
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    
+    
+    
+    print t(idx_aprob);
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    
+    
+    u = t(idx_aprob);
+    print u;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    bd_p = counter || prom;
+
+    print bd_p;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    
+
+    print bd_p;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    
+
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_rep,];
+    
+
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_rep,];
+    
+
+    print aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+
+    print aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    names_aprob = names[idx_aprob,];
+
+    print aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    names_aprob = names[idx_aprob,];
+
+    print names_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print idx_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_aprob2 = names[idx_aprob2,];
+    names_rep = names[idx_rep,];
+
+    print idx_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = bd_p[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_aprob2 = names[idx_aprob2,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = bd_p[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_aprob2 = names[idx_aprob2,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(bd_p[,2]>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(bd_p[,2]<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_aprob2 = names[idx_aprob2,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(notas>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(notas<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_aprob2 = names[idx_aprob2,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(prom>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(prom<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    /*algo raro pasa aca y no tenemos explicacion*/
+    idx_aprob2 = loc(prom>=40);
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_aprob2 = names[idx_aprob2,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(prom>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(prom<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob2;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+    
+    counter = t(1:nrow(notas)); * 1,2,3,...,nrow(notas) t de transpuesta; 
+    
+    bd_p = counter || prom;
+    
+    idx_aprob = loc(prom>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(prom<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+        
+    idx_aprob = loc(prom>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(prom<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    print names_aprob;
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+        
+    idx_aprob = loc(prom>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(prom<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    create lista_aprob from names_aprob;
+    append names_aprob;
+    close lista_aprob;
+    
+    create lista_rep from names_rep;
+    append names_rep;
+    close lista_rep;
+    
+
+quit;
+*guardar en una data los alumnos que reprueban y en otra los alumnos que apruebam;
+
+proc iml;
+    use notas;
+    read all into names var{nombre};
+    read all into notas var{p1 p2 p3 p4};
+
+    prom = notas[,:]; *promedio de las filas;
+        
+    idx_aprob = loc(prom>=40); *separar los indices entre aprobados y reprobados;
+    idx_rep = loc(prom<40);
+    
+    aprob = notas[idx_aprob,];
+    rep = notas[idx_rep,];
+    
+    *filtrar por aprovados y reprobados;
+    names_aprob = names[idx_aprob,];
+    names_rep = names[idx_rep,];
+
+    create lista_aprob from names_aprob;
+    append from names_aprob;
+    close lista_aprob;
+    
+    create lista_rep from names_rep;
+    append from names_rep;
+    close lista_rep;
+    
+
+quit;
+proc print data=lista_aprob; run;
+proc print data=lista_aprob; run;
+proc print data=lista_rep; run;
+*no correr al mismo tiempo que otros comandos (macros);
+Data notas;
+    infile &file
+    delimiter=';' firstobs=2;
+    input Nombre $ P1 P2 P3 P4;
+    run;
+    proc print data=notas;
 run;
